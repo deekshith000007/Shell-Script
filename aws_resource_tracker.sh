@@ -16,13 +16,13 @@ set -x
 #  AWS IAM Users
 
 # List S3 buckets
-aws s3 ls
+aws s3 ls | awk -F" " '{print $3}'
 
 # List EC2 instances
 aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
 
 # List Lambda 
-aws lambda list-functions
+aws lambda list-functions | jq '.Functions[].FunctionName'
 
 # List IAM User
 aws iam list-users | jq '.Users[].UserName'
