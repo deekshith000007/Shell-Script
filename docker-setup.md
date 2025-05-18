@@ -24,7 +24,7 @@ newgrp docker'''<br>
 
 sudo chmod +x /usr/local/bin/docker-compose
 
-# Test
+Test
 docker-compose --version'''<br>
 <h3>Step 6: (Optional) Configure UFW Firewall</h3>
 Allow basic traffic:
