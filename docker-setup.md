@@ -24,21 +24,21 @@ newgrp docker'''<br>
 
 sudo chmod +x /usr/local/bin/docker-compose
 
-Test
+Test<br>
 docker-compose --version'''<br>
 <h3>Step 6: (Optional) Configure UFW Firewall</h3>
 Allow basic traffic:
 
-'''sudo apt install ufw -y
-sudo ufw allow OpenSSH
-sudo ufw allow 80
-sudo ufw allow 443
-sudo ufw enable'''
-If this is MySQL Server (Server B):
-'''sudo ufw allow from <Server-A-IP> to any port 3306'''<br>
+'''sudo apt install ufw -y<br>
+sudo ufw allow OpenSSH<br>
+sudo ufw allow 80<br>
+sudo ufw allow 443<br>
+sudo ufw enable'''<br>
+If this is MySQL Server (Server B):<br>
+'''sudo ufw allow from <Server-A-IP> to any port 3306'''<br><br>
 
 <h3>Installation Summary:</h3>
-''' Application	Command/Status
-Docker	docker --version
-Docker Compose	docker-compose --version
+''' Application	Command/Status<br>
+Docker	docker --version<br>
+Docker Compose	docker-compose --version<br>
 UFW (Firewall)	sudo ufw status ''' <br>
