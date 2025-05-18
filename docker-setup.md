@@ -1,6 +1,6 @@
 <h3>Step 1: Update System<h3></h3>
 '''sudo apt update && sudo apt upgrade -y'''<br>
-<h3></h3>Step 2: Install Docker</h3>
+<h3></h3>Step 2: Install Docker</h3><br>
 '''sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
