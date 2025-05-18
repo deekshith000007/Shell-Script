@@ -35,7 +35,7 @@ sudo ufw allow 80<br>
 sudo ufw allow 443<br>
 sudo ufw enable'''<br>
 If this is MySQL Server (Server B):<br>
-'''sudo ufw allow from <Server-A-IP> to any port 3306'''<br><br>
+'''sudo ufw allow from Wordpress-Server-IP to any port 3306'''<br><br>
 
 <h3>Installation Summary:</h3>
 ''' Application	Command/Status<br>
