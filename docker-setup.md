@@ -16,8 +16,8 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io'''<br>
 '''sudo systemctl enable docker
 sudo systemctl start docker'''<br>
 <h3>Step 4: Add Current User to Docker Group (optional but recommended)</h3>
-'''sudo usermod -aG docker $USER
-# Then log out and log back in or run:
+'''sudo usermod -aG docker $USER<br>
+# Then log out and log back in or run:<br>
 newgrp docker'''<br>
 <h3>Step 5: Install Docker Compose (v2.x)</h3>
 '''sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
